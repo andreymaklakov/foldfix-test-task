@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+
+.btns_container {
+  display: flex;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: fit-content;
+
+  button {
+    height: 40px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #fff;
+    color: $grayTextColor;
+
+    cursor: pointer;
+
+    &:hover {
+      background: darken(white, 10%);
+    }
+  }
+
+  .left_btn {
+    border-radius: 6px 0px 0px 6px;
+  }
+  .right_btn {
+    border-radius: 0px 6px 6px 0px;
+  }
+
+  .btn_active {
+    background: $grayBg;
+    color: $secondaryTextColor;
+
+    &:hover {
+      background: darken($grayBg, 10%);
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "../../styles/variables.scss";
+
+.banner_container {
+  background: $lightGreenBg;
+
+  padding: 48px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (width < 770px) {
+    padding: 24px 39px;
+    gap: 14px;
+    height: 184px;
+    overflow-y: hidden;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: $tertiaryTextColor;
+    letter-spacing: -0.05em;
+
+    @media (width < 770px) {
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 50px;
+
+      span {
+        white-space: nowrap;
+      }
+    }
+
+    .colored_text {
+      color: $greenTextColor;
+    }
+  }
+
+  .banner_cards_container {
+    display: grid;
+    gap: 16px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    @media (width < 1420px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (width < 900px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (width < 770px) {
+      display: none;
+    }
+  }
+
+  .banner_logo {
+    display: none;
+
+    @media (width < 770px) {
+      display: block;
+    }
+  }
+}

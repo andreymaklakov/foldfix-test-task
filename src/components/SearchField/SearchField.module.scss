@@ -1,0 +1,21 @@
+.search_big {
+  display: block;
+
+  @media (width < 900px) {
+    display: none;
+  }
+}
+
+.search_sm {
+  display: none;
+
+  @media (width < 900px) {
+    display: block;
+  }
+
+  .search_input {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

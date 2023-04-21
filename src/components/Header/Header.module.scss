@@ -1,0 +1,129 @@
+@import "../../styles/variables.scss";
+
+.header {
+  padding: 24px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $primaryTextColor;
+
+  font-weight: 700;
+
+  @media (width < 770px) {
+    padding: 16px;
+    height: 128px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+.header_big {
+  padding: 24px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $primaryTextColor;
+
+  font-weight: 700;
+
+  @media (width < 770px) {
+    display: none;
+  }
+
+  .header_left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .header_logo {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      h3 {
+        font-size: 24px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+
+      @media (width < 900px) {
+        gap: 8px;
+      }
+    }
+
+    .header_navbtns {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+
+  .header_right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.header_sm {
+  display: none;
+
+  padding: 16px;
+  height: 128px;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  width: fit-content;
+  margin: auto;
+  justify-content: space-between;
+  color: $primaryTextColor;
+  font-weight: 700;
+
+  @media (width < 770px) {
+    display: flex;
+  }
+
+  .header_up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .header_logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .circle {
+        width: 24px;
+        height: 24px;
+        background: linear-gradient(154.44deg, #64caeb 10.23%, #1347ff 89.89%);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .header_bottom {
+    .header_navbtns {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+}

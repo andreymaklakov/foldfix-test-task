@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.input_container {
+  display: flex;
+  align-items: center;
+  color: $grayTextColor;
+
+  .input_img {
+    position: relative;
+    top: 0;
+    left: 30px;
+    display: flex;
+  }
+}

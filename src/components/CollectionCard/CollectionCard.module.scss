@@ -1,0 +1,64 @@
+@import "../../styles/variables.scss";
+
+.card {
+  padding: 16px;
+  width: 358px;
+
+  border: 1px solid #eff0f0;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  color: $secondaryTextColor;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  .card_header {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  table {
+    width: 100%;
+
+    tbody {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+
+      tr {
+        display: flex;
+        justify-content: space-between;
+
+        th {
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 18px;
+          color: $grayTextColor;
+        }
+
+        .vol_data {
+          color: $greenTextColor;
+        }
+
+        td {
+          span {
+            font-size: 80%;
+          }
+        }
+      }
+    }
+  }
+}

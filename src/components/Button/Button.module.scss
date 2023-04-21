@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+
+.btn {
+  height: 40px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    background: darken(white, 10%);
+  }
+}
+
+.btn_filled {
+  background: $grayBg;
+  border: none;
+
+  &:hover {
+    background: darken($grayBg, 10%);
+  }
+}
+
+.btn_active {
+  background: $greenBg;
+  color: $greenTextColor;
+
+  &:hover {
+    background: darken($greenBg, 10%);
+  }
+}

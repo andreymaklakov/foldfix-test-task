@@ -1,0 +1,101 @@
+@import "../../styles/variables.scss";
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+
+  .table_head {
+    color: $grayTextColor;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    padding-bottom: 8px;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 7px;
+    }
+
+    th {
+      text-align: start;
+
+      p {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .table_body {
+    box-shadow: 0 0 0 1px #eff0f0;
+    border-radius: 16px;
+    padding-top: 6px;
+
+    font-weight: 700;
+    font-size: 16px;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      height: 6px;
+    }
+
+    & :last-child {
+      box-shadow: 0 0 0 0 #eff0f0;
+    }
+
+    tr {
+      height: 80px;
+      padding: 24px;
+
+      box-shadow: 0 25px 0 -24px #eff0f0;
+
+      .collection_name {
+        p {
+          display: flex;
+          align-items: center;
+          white-space: normal;
+          gap: 8px;
+
+          img {
+            border-radius: 8px;
+            padding-right: 0;
+          }
+        }
+      }
+
+      .vol_data {
+        color: $greenTextColor;
+      }
+
+      td {
+        span {
+          font-size: 80%;
+        }
+      }
+
+      & :nth-child(n) {
+        width: 147px;
+      }
+
+      & > :first-child {
+        padding-left: 24px;
+        width: 30vw;
+        max-width: 520px;
+      }
+
+      & :last-child {
+        width: fit-content;
+        white-space: nowrap;
+        padding-right: 24px;
+      }
+
+      & :nth-last-child(2) {
+        width: 130px;
+      }
+    }
+  }
+}
