@@ -1,5 +1,7 @@
 Page design: https://www.figma.com/file/uSgHnDiKb0e3ZJsxatbiSB/Robox-Test?node-id=1-796&t=QvRzAqT9tocFI7TC-0
 
+Check deployed page: https://sprightly-smakager-e36c9e.netlify.app/
+
 ## Getting Started
 
 First, install all dependencies npm i.
