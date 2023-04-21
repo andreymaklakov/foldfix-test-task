@@ -1,3 +1,5 @@
+Page design: https://www.figma.com/file/uSgHnDiKb0e3ZJsxatbiSB/Robox-Test?node-id=1-796&t=QvRzAqT9tocFI7TC-0
+
 ## Getting Started
 
 First, install all dependencies npm i.
